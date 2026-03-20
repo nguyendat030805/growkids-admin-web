@@ -1,5 +1,5 @@
 import React from 'react';
-import { Lock, Unlock, ShieldAlert, UserCheck, Edit3, Trash2, Loader2 } from 'lucide-react'; 
+import { Lock, Unlock, ShieldAlert, UserCheck, Loader2 } from 'lucide-react'; 
 import type { User } from '../types/UserType';
 
 interface Props {
