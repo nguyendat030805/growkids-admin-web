@@ -19,7 +19,7 @@ export const Sidebar = () => {
   }, []);
 
   const menuItems = [
-    { name: 'Dashboard', icon: <LayoutDashboard size={20} />, path: '/admin/dashboard' },
+    { name: 'Dashboard', icon: <LayoutDashboard size={20} />, path: '/admin/dashboards' },
     { name: 'User Management', icon: <Users size={20} />, path: '/admin/users' },
     { name: 'Content Management', icon: <CreditCard size={20} />, path: '/admin/mini-songs' },
   ];

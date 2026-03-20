@@ -27,7 +27,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLoginSuccess }) => {
         toast.success(`Welcome back, ${name}!`);
             onLoginSuccess?.();
             setTimeout(() => {
-                window.location.href = '/admin/users';; 
+                window.location.href = '/admin/dashboards';; 
             }, 1000);
     }
   };
