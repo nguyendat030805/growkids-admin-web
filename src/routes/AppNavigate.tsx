@@ -21,6 +21,7 @@ export const AppRouter = () => {
       ))}
 
       {privateRoutes.map((route) => (
+        
         <Route
           key={route.path}
           path={route.path}

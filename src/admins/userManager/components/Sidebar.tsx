@@ -21,7 +21,7 @@ export const Sidebar = () => {
   const menuItems = [
     { name: 'Dashboard', icon: <LayoutDashboard size={20} />, path: '/admin/dashboard' },
     { name: 'User Management', icon: <Users size={20} />, path: '/admin/users' },
-    { name: 'Gói đăng ký', icon: <CreditCard size={20} />, path: '/admin/subscriptions' },
+    { name: 'Content Management', icon: <CreditCard size={20} />, path: '/admin/mini-songs' },
   ];
 
   const handleLogout = () => {
