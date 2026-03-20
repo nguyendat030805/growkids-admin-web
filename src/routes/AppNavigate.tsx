@@ -8,14 +8,14 @@ export const AppRouter = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<Navigate to={isAuthenticated ? "/admin/users" : "/login"} replace />} />
+      <Route path="/" element={<Navigate to={isAuthenticated ? "/admin/dashboards" : "/login"} replace />} />
 
       {publicRoutes.map((route) => (
         <Route 
           key={route.path} 
           path={route.path} 
           element={
-            isAuthenticated ? <Navigate to="/admin/users" replace /> : <route.component />
+            isAuthenticated ? <Navigate to="/admin/dashboards" replace /> : <route.component />
           } 
         />
       ))}
@@ -39,7 +39,7 @@ export const AppRouter = () => {
           }
         />
       ))}
-      <Route path="*" element={<Navigate to={isAuthenticated ? "/admin/users" : "/login"} replace />} />
+      <Route path="*" element={<Navigate to={isAuthenticated ? "/admin/dashboards" : "/login"} replace />} />
     </Routes>
   );
 };
